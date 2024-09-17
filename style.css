@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1dvw 1.5dvw;
+    background-color: #F0F0F0;
+    box-shadow:0px 2px 7px #363436b8;
+}
+.circ{
+    background-color: #3683f0;
+    padding: 0.5dvw;
+    border-radius: 50%;
+    margin: 0.3dvw;
+
+}
+#root{
+    padding: 3.5dvh 8dvw;
+}
+  /* Technical Project Management */
+.heading-text h1{
+font-weight: 700;
+font-size: 28px;
+line-height: 42px;
+
+letter-spacing: 0.02em;
+color: #0029FF;
+
+
+}
+.heading-text{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.submit{
+    
+background: #0029FF;
+border: none;
+border-radius: 10px;
+font-weight: 500;
+font-size: 1dvw;
+padding:1.5dvh 1dvw;
+line-height: 18px;
+color: #FFFFFF;
+cursor: pointer;
+}
+.grey{
+    background-color:#E9ECEF; 
+    margin: 3dvh 0;
+    padding: 1.5dvw;
+}
+.task_title{
+margin-bottom: 3dvh;
+}
+.task_description{
+font-weight: 400;
+font-size: 1.1dvw;
+line-height: 21px;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2dvw;
+}
+.card{
+margin: 3dvw;
+width: 480px;
+height: 580px;
+background: #FDFDFD;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+
+}
+.black-heading{
+    background-color: #000000;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 1dvw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description{
+    padding: 1dvw;
+    margin-bottom: 2dvh;
+    line-height: 1.5rem;
+}
+
+/* card 2 styling */
+.thread-a{
+    display: flex;
+    background-color: rgba(254,255, 192, 0.2);
+    padding: 1dvh 1.5dvw;
+    align-items: center;
+}
+.thread-a h2{
+    padding-left: 5dvw;
+}
+.sub{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 1dvw;
+    padding-top: 2dvh;
+}
+.sub-thread,.sub-interpretation{
+    margin: 1dvw;
+    background-color: #f6f6f6;
+    padding-top:1dvh;
+    
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+
+textarea {
+    width: 100%;
+    height: 10dvh;
+    border: 1px solid #cccccc3c;
+    border-radius: 5px;
+    resize: none;
+    padding: 1dvh;
+    font-size: 0.9rem;
+    margin-top: 1dvh;
+  }
+
+  .toggle-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 1dvw;
+  }
+  .dropdown {
+    width: 8dvw;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 0.8dvw;
+  }
+  .thread-icons img{
+    margin-right: 0.5dvw;
+  }
+  .sub-thread-btn{
+    margin: 2.5dvh 1.5dvw ;
+  }
+  .sum-thread{
+    margin:0 1.2dvw;
+    background-color: #f6f6f6;
+    padding-top: 1dvh;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  /* quill */
+  .editor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5dvw;
+  }
+
+  .input-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .quill-editor {
+    height: 25dvh !important ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  /* Custom toolbar styling */
+  .menu-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+
+  .menu-bar button {
+    background: none;
+    border: none;
+    font-size:1dvw;
+    cursor: pointer;
+    padding: 0.5dvh 0.5dvw;
+  }
+
+  .menu-bar button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .custom-toolbar {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+
+  .custom-toolbar select, .custom-toolbar button {
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .custom-toolbar .ql-formats {
+    display: inline-flex;
+  }
+  .ql-header{
+    appearance: none !important;
+    background-color: #EBEBEB;
+  }
+
+  /* 4SA */
+
+
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.collapsible {
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible i {
+    transition: transform 0.3s ease;
+}
+
+.sa-content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+.sa-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.sa-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+   display: block;
+   text-align: right;
+
+}
+
+.sa-content a:hover {
+    text-decoration: underline;
+}
+
+.active i {
+    transform: rotate(180deg);
+}
+  
+.journey-board{
+    height: 80dvh;
+    width: 30dvw;
+    position: absolute;
+    left: -0.5dvw;
+    top: 13dvh;
+    border-radius:15px ;
+    background-color: white;
+    transition: all 1s;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.journey-board-content{
+    background-color: white;
+    padding-top: 4dvh;
+    padding-left: 2dvw;
+   
+}
+.journey-board-btn{
+    all: unset;
+    cursor: pointer;
+    transition: all 1s;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+.translat{
+    transform: translateX(-25dvw);
+    transition: all 1s;
+}
+.black-heading-notice{
+    writing-mode: vertical-rl;
+text-orientation: upright;
+background-color: #000000;
+color: white;
+padding: 1dvw;
+border-radius: 15px 0 0 15px;
+height: 45dvh;
+}
+.notice-board{
+    position: absolute;
+height: 45dvh;
+width: 4.5dvw;
+right: 5dvw;
+top: 13dvh;
+border-radius: 15px 0 0 15px;
+transform: translateX(5dvw);
+
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.blue-icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 190dvh;
+}
+.blue-icons img{
+    margin: 2dvh 2dvw;
+}
